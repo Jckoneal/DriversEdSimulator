@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dxejrv7u85py0"
+path="res://.godot/imported/Low_Poly_Forest_treeRoundTop03.obj-dc8dbb2215e2de893b7414f7aa233b19.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Low_Poly_Forest_treeRoundTop03.obj-dc8dbb2215e2de893b7414f7aa233b19.mesh"]
+
+source_file="res://3dModels/Low_Poly_Forest_Pack_Devilswork.Shop_v02/OBJ/Low_Poly_Forest_treeRoundTop03.obj"
+dest_files=["res://.godot/imported/Low_Poly_Forest_treeRoundTop03.obj-dc8dbb2215e2de893b7414f7aa233b19.mesh", "res://.godot/imported/Low_Poly_Forest_treeRoundTop03.obj-dc8dbb2215e2de893b7414f7aa233b19.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
