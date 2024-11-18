@@ -52,7 +52,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("follow_this")]
-transform = Transform3D(1, 0, 0, 0, 0.989776, 0.142629, 0, -0.142629, 0.989776, 4.05282, 4.72172, 5.80061)
+transform = Transform3D(1, 0, 0, 0, 0.997185, -0.0749786, 0, 0.0749786, 0.997185, -0.359723, 1.68889, -0.490692)
 script = ExtResource("5_5rui7")
 follow_distance = 8
 follow_height = 5
