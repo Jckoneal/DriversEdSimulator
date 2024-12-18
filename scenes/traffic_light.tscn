@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd4bqonslq14m"]
+
+[ext_resource type="PackedScene" uid="uid://w501mg8ikfl0" path="res://3dModels/Enviroment/TrafficLight.glb" id="1_nu1e7"]
+
+[node name="TrafficLight" instance=ExtResource("1_nu1e7")]

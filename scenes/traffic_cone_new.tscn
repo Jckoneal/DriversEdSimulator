@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv540id1ls1ud"]
+
+[ext_resource type="PackedScene" uid="uid://bke0r2isurhet" path="res://3dModels/Enviroment/TrafficConeNew.glb" id="1_ne2di"]
+
+[node name="TrafficConeNew" instance=ExtResource("1_ne2di")]

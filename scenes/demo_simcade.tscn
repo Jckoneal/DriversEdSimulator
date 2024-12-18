@@ -17,6 +17,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09154, 0)
 vehicle_node = NodePath("VehicleRigidBody")
 
 [node name="VehicleRigidBody" parent="VehicleController" instance=ExtResource("2_ms26v")]
+reverse_ratio = 3.3
 
 [node name="EngineSound" parent="VehicleController/VehicleRigidBody" node_paths=PackedStringArray("vehicle") instance=ExtResource("3_o8yet")]
 vehicle = NodePath("..")
@@ -59,6 +60,7 @@ follow_height = 5
 follow_this = NodePath("../VehicleController/VehicleRigidBody")
 
 [node name="Demo" parent="." instance=ExtResource("6_up3gk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.845432, -0.0766053, -1.37416)
 
 [node name="Debug" type="Node" parent="." node_paths=PackedStringArray("vehicle")]
 script = ExtResource("7_ht2x6")

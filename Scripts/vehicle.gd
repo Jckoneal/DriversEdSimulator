@@ -267,7 +267,7 @@ extends RigidBody3D
 ## unrealistically high amounts of grip.
 ## Surface detection uses node groups to identify the surface, so make sure
 ## your staticbodies and rigidbodies belong to one of these groups.
-@export var lateral_grip_assist := { "Road" : 0.05, "Dirt" : 0.0, "Grass" : 0.0}
+@export var lateral_grip_assist := { "Road" : 0.5, "Dirt" : 0.0, "Grass" : 0.0}
 ## A multiplier to adjust longitudinal grip to differ from lateral grip.
 ## Useful for allowing vehicles to have wheel spin and maintain high lateral grip.
 ## Surface detection uses node groups to identify the surface, so make sure
