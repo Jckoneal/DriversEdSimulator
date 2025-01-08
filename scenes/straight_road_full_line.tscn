@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://blyabeyt1wamk"]
+
+[ext_resource type="PackedScene" uid="uid://brtydgsrdrw5v" path="res://3dModels/Enviroment/StraightRoadFullLine.glb" id="1_vjdkv"]
+
+[node name="StraightRoadFullLine" instance=ExtResource("1_vjdkv")]
+
+[node name="StraightRoadFullLine" parent="." index="0"]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0)
