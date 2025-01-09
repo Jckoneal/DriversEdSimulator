@@ -3,3 +3,15 @@
 [ext_resource type="PackedScene" uid="uid://bke0r2isurhet" path="res://3dModels/Enviroment/TrafficConeNew.glb" id="1_ne2di"]
 
 [node name="TrafficConeNew" instance=ExtResource("1_ne2di")]
+
+[node name="Circle" parent="Circle_Collider-rigid/Circle" index="0"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CollisionShape3D" parent="Circle_Collider-rigid/Circle" index="1"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CollisionShape3D2" parent="Circle_Collider-rigid/Circle" index="2"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CollisionShape3D" parent="Circle_Collider-rigid" index="1"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)

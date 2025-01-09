@@ -11,12 +11,14 @@
 [ext_resource type="Script" path="res://Scripts/debug_ui.gd" id="8_a7fg4"]
 
 [node name="ArcadeDemo" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.240452, 0)
 
 [node name="VehicleController" parent="." node_paths=PackedStringArray("vehicle_node") instance=ExtResource("1_6465w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09154, 0)
 vehicle_node = NodePath("VehicleRigidBody")
 
 [node name="VehicleRigidBody" parent="VehicleController" instance=ExtResource("2_ms26v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.362518, 0)
 reverse_ratio = 3.3
 
 [node name="EngineSound" parent="VehicleController/VehicleRigidBody" node_paths=PackedStringArray("vehicle") instance=ExtResource("3_o8yet")]
@@ -60,7 +62,7 @@ follow_height = 5
 follow_this = NodePath("../VehicleController/VehicleRigidBody")
 
 [node name="Demo" parent="." instance=ExtResource("6_up3gk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.845432, -0.0766053, -1.37416)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.996292, -0.103973, -1.53077)
 
 [node name="Debug" type="Node" parent="." node_paths=PackedStringArray("vehicle")]
 script = ExtResource("7_ht2x6")

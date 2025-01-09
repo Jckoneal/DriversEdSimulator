@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dnarcwnhm5an4"
-path="res://.godot/imported/Intersection.glb-c8b92830b3acfdb9b2e7e78549b4993f.scn"
+uid="uid://cmkj63jqs5b68"
+path="res://.godot/imported/Building1.glb-8827898b526b9d0016daf6f282e3b029.scn"
 
 [deps]
 
-source_file="res://3dModels/Enviroment/Intersection.glb"
-dest_files=["res://.godot/imported/Intersection.glb-c8b92830b3acfdb9b2e7e78549b4993f.scn"]
+source_file="res://3dModels/Enviroment/Building1.glb"
+dest_files=["res://.godot/imported/Building1.glb-8827898b526b9d0016daf6f282e3b029.scn"]
 
 [params]
 
@@ -31,12 +31,6 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"nodes": {
-"PATH:Plane-col_Static": {
-"generate/physics": true
-}
-}
-}
+_subresources={}
 gltf/naming_version=1
 gltf/embedded_image_handling=1
