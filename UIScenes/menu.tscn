@@ -1,13 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7fuwd5e4x5ve"]
+[gd_scene load_steps=5 format=3 uid="uid://b7fuwd5e4x5ve"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hmw6g"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_www32"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qxc6v"]
 bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_size = 3
-shadow_offset = Vector2(0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f0i1s"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fpypc"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -17,7 +41,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="."]
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = -2.0
+offset_right = 111.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_www32")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qxc6v")
+text = "Start Permit Test"
+
+[node name="Button3" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -25,12 +68,74 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -106.0
-offset_top = -23.5
-offset_right = 106.0
-offset_bottom = 23.5
+offset_top = 69.0
+offset_right = 112.0
+offset_bottom = 122.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.366595, 0.366595, 0.366595, 1)
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxFlat_hmw6g")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_f0i1s")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qxc6v")
 text = "Start Game"
+
+[node name="Button 4" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -106.0
+offset_top = 139.0
+offset_right = 112.0
+offset_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_fpypc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qxc6v")
+text = "Exit"
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -344.0
+offset_top = 58.0
+offset_right = 339.0
+offset_bottom = 140.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 59
+text = "DRIVERS ED SIMULATOR"
+
+[node name="StudioLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -159.0
+offset_top = 172.0
+offset_right = 159.0
+offset_bottom = 216.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 31
+text = "An I-80 Studios Game"
+
+[node name="DevelopersLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -253.5
+offset_top = -73.0
+offset_right = 253.5
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 19
+text = "Developers: Alexandria Duff, Meredith Duff, Jack O'neal"
