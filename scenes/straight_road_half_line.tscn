@@ -6,3 +6,6 @@
 
 [node name="StraightRoadHalfLine" parent="." index="0"]
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0)
+
+[node name="StaticBody3D" parent="StraightRoadHalfLine" index="0"]
+disable_mode = 1

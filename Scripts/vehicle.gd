@@ -118,10 +118,10 @@ extends RigidBody3D
 ## Time it takes to change gears on up shifts in seconds
 @export var shift_time := 0.3
 ## Enables automatic gear changes
-@export var automatic_transmission := true
+@export var automatic_transmission := false
 ## Timer to prevent the automatic gear shifts changing gears too quickly 
 ## in milliseconds
-@export var automatic_time_between_shifts := 1000.0
+@export var automatic_time_between_shifts := 100
 ## Drivetrain inertia
 @export var gear_inertia := 0.02
 
@@ -267,7 +267,7 @@ extends RigidBody3D
 ## unrealistically high amounts of grip.
 ## Surface detection uses node groups to identify the surface, so make sure
 ## your staticbodies and rigidbodies belong to one of these groups.
-@export var lateral_grip_assist := { "Road" : 0.5, "Dirt" : 0.0, "Grass" : 0.0}
+@export var lateral_grip_assist := { "Road" : 0.9, "Dirt" : 0.0, "Grass" : 0.0}
 ## A multiplier to adjust longitudinal grip to differ from lateral grip.
 ## Useful for allowing vehicles to have wheel spin and maintain high lateral grip.
 ## Surface detection uses node groups to identify the surface, so make sure
@@ -573,6 +573,7 @@ func initialize():
 	is_ready = true
 
 func _physics_process(delta : float) -> void:
+
 	if not is_ready:
 		return
 	

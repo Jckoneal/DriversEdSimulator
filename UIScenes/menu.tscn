@@ -1,4 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://b7fuwd5e4x5ve"]
+[gd_scene load_steps=6 format=3 uid="uid://b7fuwd5e4x5ve"]
+
+[ext_resource type="Script" path="res://UIScenes/menu.gd" id="1_hsx35"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_www32"]
 corner_radius_top_left = 16
@@ -40,58 +42,44 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_hsx35")
 
-[node name="Button2" type="Button" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -107.0
-offset_top = -2.0
-offset_right = 111.0
-offset_bottom = 51.0
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -330.0
+offset_right = 24.0
+offset_bottom = -238.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
+scale = Vector2(2, 2)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Start Permit Test" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 theme_override_styles/hover = SubResource("StyleBoxFlat_www32")
 theme_override_styles/normal = SubResource("StyleBoxFlat_qxc6v")
-text = "Start Permit Test"
+text = "  Start Permit Test  "
 
-[node name="Button3" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -106.0
-offset_top = 69.0
-offset_right = 112.0
-offset_bottom = 122.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Start Game" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 theme_override_styles/hover = SubResource("StyleBoxFlat_f0i1s")
 theme_override_styles/normal = SubResource("StyleBoxFlat_qxc6v")
 text = "Start Game"
 
-[node name="Button 4" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -106.0
-offset_top = 139.0
-offset_right = 112.0
-offset_bottom = 192.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 theme_override_styles/hover = SubResource("StyleBoxFlat_fpypc")
@@ -103,11 +91,12 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -344.0
-offset_top = 58.0
-offset_right = 339.0
-offset_bottom = 140.0
+offset_left = -651.0
+offset_top = 62.0
+offset_right = 32.0
+offset_bottom = 144.0
 grow_horizontal = 2
+scale = Vector2(1.94922, 1.94922)
 theme_override_font_sizes/font_size = 59
 text = "DRIVERS ED SIMULATOR"
 
@@ -116,11 +105,12 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -159.0
-offset_top = 172.0
-offset_right = 159.0
-offset_bottom = 216.0
+offset_left = -266.0
+offset_top = 215.0
+offset_right = 52.0
+offset_bottom = 259.0
 grow_horizontal = 2
+scale = Vector2(1.99462, 1.99462)
 theme_override_font_sizes/font_size = 31
 text = "An I-80 Studios Game"
 
@@ -139,3 +129,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 19
 text = "Developers: Alexandria Duff, Meredith Duff, Jack O'neal"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Start Permit Test" to="." method="_on_start_permit_test_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Start Game" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

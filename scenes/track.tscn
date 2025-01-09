@@ -4,11 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://bfj88dim36t3" path="res://3dModels/Enviroment/StopSign.glb" id="2_u2q5r"]
 [ext_resource type="PackedScene" uid="uid://dk7mler0famwa" path="res://3dModels/Enviroment/trashbag.glb" id="3_8aqtm"]
 [ext_resource type="PackedScene" uid="uid://w501mg8ikfl0" path="res://3dModels/Enviroment/TrafficLight.glb" id="4_qh5t1"]
-[ext_resource type="PackedScene" path="res://scenes/intersection_half_cross.tscn" id="6_7no42"]
-[ext_resource type="PackedScene" path="res://scenes/straight_road_half_line.tscn" id="7_gos3m"]
-[ext_resource type="PackedScene" path="res://scenes/straight_road_full_line.tscn" id="8_20dui"]
-[ext_resource type="PackedScene" path="res://scenes/intersection_full_cross.tscn" id="9_7bpqq"]
-[ext_resource type="PackedScene" path="res://scenes/building_1.tscn" id="9_elp5e"]
+[ext_resource type="PackedScene" uid="uid://df3430yo1v1pt" path="res://scenes/intersection_half_cross.tscn" id="6_7no42"]
+[ext_resource type="PackedScene" uid="uid://b5oqfat3lyr53" path="res://scenes/straight_road_half_line.tscn" id="7_gos3m"]
+[ext_resource type="PackedScene" uid="uid://blyabeyt1wamk" path="res://scenes/straight_road_full_line.tscn" id="8_20dui"]
+[ext_resource type="PackedScene" uid="uid://dvvmv5ux5jmr8" path="res://scenes/intersection_full_cross.tscn" id="9_7bpqq"]
+[ext_resource type="PackedScene" uid="uid://dgnoy3csn75wd" path="res://scenes/building_1.tscn" id="9_elp5e"]
 
 [sub_resource type="Gradient" id="Gradient_u6ph6"]
 colors = PackedColorArray(0.746094, 0.746094, 0.746094, 1, 1, 1, 1, 1)
@@ -130,5 +130,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 0)
 [node name="Building1" parent="." instance=ExtResource("9_elp5e")]
 transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -7.8, 0.001, 0)
 
-[node name="IntersectionHalfCross" parent="." instance=ExtResource("6_7no42")]
+[node name="IntersectionHalfCross" parent="." groups=["Road"] instance=ExtResource("6_7no42")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, -16)

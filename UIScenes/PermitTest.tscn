@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dkkxhkxt7q2u8"]
+[gd_scene load_steps=5 format=3 uid="uid://dkkxhkxt7q2u8"]
+
+[ext_resource type="Script" path="res://UIScenes/permit_test.gd" id="1_tc1kg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k7a2v"]
 corner_radius_top_left = 20
@@ -15,6 +17,20 @@ corner_radius_bottom_left = 20
 shadow_size = 5
 shadow_offset = Vector2(0, 3)
 
+[sub_resource type="GDScript" id="GDScript_ksmhc"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
 [node name="PermitTest" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -22,8 +38,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_tc1kg")
 
-[node name="Button" type="Button" parent="."]
+[node name="Back" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.393
@@ -43,7 +60,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_k7a2v")
 theme_override_styles/normal = SubResource("StyleBoxFlat_siwpk")
 text = "Back"
 
-[node name="Button2" type="Button" parent="."]
+[node name="Next" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.393
@@ -78,3 +95,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 46
 text = "Permit Test"
+script = SubResource("GDScript_ksmhc")
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]

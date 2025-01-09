@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://y4hs21kwif5o"]
+[gd_scene load_steps=11 format=3 uid="uid://y4hs21kwif5o"]
 
 [ext_resource type="PackedScene" uid="uid://c3ixqkc6k13yi" path="res://scenes/vehicle_controller.tscn" id="1_6465w"]
+[ext_resource type="Script" path="res://scenes/Main.gd" id="1_f6o4a"]
 [ext_resource type="PackedScene" uid="uid://ccs7xtede51mo" path="res://scenes/simcade_car.tscn" id="2_ms26v"]
 [ext_resource type="PackedScene" uid="uid://b2hlchrj4h2b7" path="res://scenes/engine_sound.tscn" id="3_o8yet"]
 [ext_resource type="PackedScene" uid="uid://h6vdpba71kpr" path="res://scenes/smoke_effect.tscn" id="4_6e2i6"]
@@ -12,6 +13,7 @@
 
 [node name="ArcadeDemo" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.240452, 0)
+script = ExtResource("1_f6o4a")
 
 [node name="VehicleController" parent="." node_paths=PackedStringArray("vehicle_node") instance=ExtResource("1_6465w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09154, 0)
