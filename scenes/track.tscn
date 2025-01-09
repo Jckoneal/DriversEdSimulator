@@ -4,11 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://bfj88dim36t3" path="res://3dModels/Enviroment/StopSign.glb" id="2_u2q5r"]
 [ext_resource type="PackedScene" uid="uid://dk7mler0famwa" path="res://3dModels/Enviroment/trashbag.glb" id="3_8aqtm"]
 [ext_resource type="PackedScene" uid="uid://w501mg8ikfl0" path="res://3dModels/Enviroment/TrafficLight.glb" id="4_qh5t1"]
-[ext_resource type="PackedScene" uid="uid://df3430yo1v1pt" path="res://scenes/intersection_half_cross.tscn" id="6_7no42"]
-[ext_resource type="PackedScene" uid="uid://b5oqfat3lyr53" path="res://scenes/straight_road_half_line.tscn" id="7_gos3m"]
-[ext_resource type="PackedScene" uid="uid://blyabeyt1wamk" path="res://scenes/straight_road_full_line.tscn" id="8_20dui"]
-[ext_resource type="PackedScene" uid="uid://dvvmv5ux5jmr8" path="res://scenes/intersection_full_cross.tscn" id="9_7bpqq"]
-[ext_resource type="PackedScene" uid="uid://dgnoy3csn75wd" path="res://scenes/building_1.tscn" id="9_elp5e"]
+[ext_resource type="PackedScene" path="res://scenes/intersection_half_cross.tscn" id="6_7no42"]
+[ext_resource type="PackedScene" path="res://scenes/straight_road_half_line.tscn" id="7_gos3m"]
+[ext_resource type="PackedScene" path="res://scenes/straight_road_full_line.tscn" id="8_20dui"]
+[ext_resource type="PackedScene" path="res://scenes/intersection_full_cross.tscn" id="9_7bpqq"]
+[ext_resource type="PackedScene" path="res://scenes/building_1.tscn" id="9_elp5e"]
 
 [sub_resource type="Gradient" id="Gradient_u6ph6"]
 colors = PackedColorArray(0.746094, 0.746094, 0.746094, 1, 1, 1, 1, 1)
@@ -47,9 +47,6 @@ glow_enabled = true
 
 [node name="World" type="Node3D"]
 
-[node name="StaticBody3D2" type="StaticBody3D" parent="." groups=["Road"]]
-transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 366.196, 0.316678, 79.3629)
-
 [node name="StaticBody3D" type="StaticBody3D" parent="." groups=["Grass"]]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
@@ -65,7 +62,7 @@ shape = SubResource("BoxShape3D_28hur")
 environment = SubResource("Environment_hn4xq")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.527563, -0.469868, 0.707743, -1.33511e-08, 0.833114, 0.553101, -0.849516, -0.291796, 0.43952, 0, 2.26991, 0)
+transform = Transform3D(0.527563, -0.469868, 0.707743, -1.33511e-08, 0.833114, 0.553101, -0.849516, -0.291796, 0.43952, 28.9146, 30.6603, -82.2872)
 
 [node name="TrafficConeNew" parent="." instance=ExtResource("1_cjsth")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0338788, -23.5038)
