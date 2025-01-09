@@ -19,5 +19,5 @@ func _physics_process(delta):
 		vehicle_node.manual_shift(-1)
 	
 	if vehicle_node.current_gear == -1:
-		vehicle_node.brake_input = Input.get_action_strength("gas")
-		vehicle_node.throttle_input = Input.get_action_strength("brake")
+		vehicle_node.brake_input = Input.get_action_strength("brake")
+		vehicle_node.throttle_input = Input.get_action_strength("gas")
