@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgc6u4jqnrcc5"]
+
+[ext_resource type="PackedScene" uid="uid://dvshe85p28lno" path="res://3dModels/Enviroment/TIntersection.glb" id="1_jrydc"]
+
+[node name="TIntersection" instance=ExtResource("1_jrydc")]
+
+[node name="TIntersection" parent="." index="0"]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0)
