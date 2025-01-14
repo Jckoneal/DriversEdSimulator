@@ -1,6 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://b7fuwd5e4x5ve"]
+[gd_scene load_steps=11 format=3 uid="uid://b7fuwd5e4x5ve"]
 
 [ext_resource type="Script" path="res://UIScenes/menu.gd" id="1_hsx35"]
+[ext_resource type="Script" path="res://UIScenes/button.gd" id="2_mjb8q"]
+[ext_resource type="AudioStream" uid="uid://lww2p0m06o6i" path="res://sounds/BadBoys.mp3" id="3_0knar"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_we8a5"]
+bg_color = Color(0, 0.475597, 0.854867, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_www32"]
 corner_radius_top_left = 16
@@ -19,6 +28,13 @@ corner_radius_bottom_left = 16
 shadow_size = 5
 shadow_offset = Vector2(0, 3)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21dvx"]
+bg_color = Color(0, 0.47451, 0.854902, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f0i1s"]
 corner_radius_top_left = 16
 corner_radius_top_right = 16
@@ -26,6 +42,13 @@ corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 shadow_size = 5
 shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bu1vw"]
+bg_color = Color(0, 0.47451, 0.854902, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fpypc"]
 corner_radius_top_left = 16
@@ -66,14 +89,17 @@ layout_mode = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxFlat_we8a5")
 theme_override_styles/hover = SubResource("StyleBoxFlat_www32")
 theme_override_styles/normal = SubResource("StyleBoxFlat_qxc6v")
 text = "  Start Permit Test  "
+script = ExtResource("2_mjb8q")
 
 [node name="Start Game" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxFlat_21dvx")
 theme_override_styles/hover = SubResource("StyleBoxFlat_f0i1s")
 theme_override_styles/normal = SubResource("StyleBoxFlat_qxc6v")
 text = "Start Game"
@@ -82,6 +108,7 @@ text = "Start Game"
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxFlat_bu1vw")
 theme_override_styles/hover = SubResource("StyleBoxFlat_fpypc")
 theme_override_styles/normal = SubResource("StyleBoxFlat_qxc6v")
 text = "Exit"
@@ -129,6 +156,11 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 19
 text = "Developers: Alexandria Duff, Meredith Duff, Jack O'neal"
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_0knar")
+volume_db = 16.0
+autoplay = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start Permit Test" to="." method="_on_start_permit_test_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start Game" to="." method="_on_start_game_pressed"]
