@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://y4hs21kwif5o"]
+[gd_scene load_steps=12 format=3 uid="uid://y4hs21kwif5o"]
 
 [ext_resource type="PackedScene" uid="uid://c3ixqkc6k13yi" path="res://scenes/vehicle_controller.tscn" id="1_6465w"]
 [ext_resource type="Script" path="res://scenes/Main.gd" id="1_f6o4a"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dxnvsoi1pvfeu" path="res://scenes/track.tscn" id="6_up3gk"]
 [ext_resource type="Script" path="res://Scripts/debug.gd" id="7_ht2x6"]
 [ext_resource type="Script" path="res://Scripts/debug_ui.gd" id="8_a7fg4"]
+[ext_resource type="AudioStream" uid="uid://lww2p0m06o6i" path="res://sounds/BadBoys.mp3" id="11_64tuk"]
 
 [node name="ArcadeDemo" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.240452, 0)
@@ -20,7 +21,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09154, 0)
 vehicle_node = NodePath("VehicleRigidBody")
 
 [node name="VehicleRigidBody" parent="VehicleController" instance=ExtResource("2_ms26v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.362518, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.611343, -0.918238, 0)
 reverse_ratio = 3.3
 
 [node name="EngineSound" parent="VehicleController/VehicleRigidBody" node_paths=PackedStringArray("vehicle") instance=ExtResource("3_o8yet")]
@@ -57,7 +58,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("follow_this")]
-transform = Transform3D(1, 0, 0, 0, 0.997185, -0.0749786, 0, 0.0749786, 0.997185, -0.359723, 1.68889, -0.490692)
+transform = Transform3D(1, 0, 0, 0, 0.997185, -0.0749786, 0, 0.0749786, 0.997185, 0.347863, 1.32579, -0.490692)
 script = ExtResource("5_5rui7")
 follow_distance = 8
 follow_height = 5
@@ -79,3 +80,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("8_a7fg4")
 metadata/_edit_use_anchors_ = true
+
+[node name="Camera3D2" type="Camera3D" parent="."]
+transform = Transform3D(-0.997153, 0.016165, 0.0736536, 0.00832728, 0.994384, -0.105502, -0.0749455, -0.104588, -0.991688, 1.3148, 1.33856, -9.68705)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("11_64tuk")
+volume_db = 16.0
+autoplay = true

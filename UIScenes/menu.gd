@@ -1,6 +1,7 @@
 extends Control
 
-
+func _ready() -> void:
+	grab_focus()
 
 func _on_start_permit_test_pressed() -> void:
 	get_tree().change_scene_to_file("res://UIScenes/PermitTest.tscn")
