@@ -41,6 +41,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_tc1kg")
 metadata/_edit_use_anchors_ = true
+metadata/_edit_horizontal_guides_ = [1711.0]
 
 [node name="Items" type="ItemList" parent="."]
 layout_mode = 1

@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://b7fuwd5e4x5ve"]
+[gd_scene load_steps=10 format=3 uid="uid://b7fuwd5e4x5ve"]
 
 [ext_resource type="Script" path="res://UIScenes/menu.gd" id="1_hsx35"]
 [ext_resource type="Script" path="res://UIScenes/button.gd" id="2_mjb8q"]
-[ext_resource type="AudioStream" uid="uid://lww2p0m06o6i" path="res://sounds/BadBoys.mp3" id="3_0knar"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_we8a5"]
 bg_color = Color(0, 0.475597, 0.854867, 1)
@@ -160,7 +159,6 @@ theme_override_font_sizes/font_size = 19
 text = "Developers: Alexandria Duff, Meredith Duff, Jack O'neal"
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_0knar")
 volume_db = 16.0
 autoplay = true
 
