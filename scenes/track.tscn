@@ -9,9 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://dvvmv5ux5jmr8" path="res://scenes/intersection_full_cross.tscn" id="9_7bpqq"]
 [ext_resource type="PackedScene" uid="uid://dgnoy3csn75wd" path="res://scenes/building_1.tscn" id="9_elp5e"]
 [ext_resource type="PackedScene" uid="uid://dgc6u4jqnrcc5" path="res://scenes/t_intersection.tscn" id="10_4k3ko"]
-[ext_resource type="PackedScene" uid="uid://bpyi7bf5sd7ey" path="res://scenes/turn.tscn" id="10_xa76v"]
-[ext_resource type="PackedScene" uid="uid://dbao8brw1ri5" path="res://scenes/fire_hydrant.tscn" id="11_ly30m"]
-[ext_resource type="PackedScene" uid="uid://pjsyag0rusfm" path="res://scenes/building_2.tscn" id="12_ea3q1"]
+[ext_resource type="PackedScene" path="res://scenes/turn.tscn" id="10_xa76v"]
+[ext_resource type="PackedScene" path="res://scenes/fire_hydrant.tscn" id="11_ly30m"]
+[ext_resource type="PackedScene" path="res://scenes/building_2.tscn" id="12_ea3q1"]
 
 [sub_resource type="Gradient" id="Gradient_u6ph6"]
 colors = PackedColorArray(0.746094, 0.746094, 0.746094, 1, 1, 1, 1, 1)
