@@ -22,17 +22,16 @@ grow_vertical = 2
 color = Color(0.72549, 0.807843, 1, 1)
 
 [node name="AnswersList" type="ItemList" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -450.0
+offset_left = -682.0
 offset_top = -256.0
-offset_right = 450.0
-offset_bottom = -46.0
+offset_right = 704.0
+offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -61,6 +60,22 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 30
 text = "Restart"
+
+[node name="StartDriving" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1060.0
+offset_top = -339.0
+offset_right = -861.0
+offset_bottom = -290.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Start Driving"
 
 [node name="RestartButtonAlways" type="Button" parent="."]
 layout_mode = 1
@@ -103,10 +118,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -612.5
-offset_top = 119.0
-offset_right = 612.5
-offset_bottom = 457.0
+offset_left = -680.0
+offset_top = 115.0
+offset_right = 672.0
+offset_bottom = 669.0
 grow_horizontal = 2
 texture = ExtResource("2_i5a68")
 expand_mode = 2
@@ -196,6 +211,7 @@ text = "Congratulations! You're correct."
 
 [connection signal="item_selected" from="AnswersList" to="." method="_on_answers_list_item_selected"]
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="StartDriving" to="." method="_on_start_driving_pressed"]
 [connection signal="pressed" from="RestartButtonAlways" to="." method="_on_restart_button_pressed"]
 [connection signal="pressed" from="OK" to="." method="_on_ok_pressed"]
 [connection signal="pressed" from="Correct" to="." method="_on_correct_pressed"]

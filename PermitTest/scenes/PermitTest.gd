@@ -10,6 +10,8 @@ extends Control
 @onready var CorrectAnswer = $CorrectAnswer
 @onready var OKButton = $OK
 @onready var Congratulation = $Correct
+@onready var StartButton = $StartDriving
+
 
 var items: Array
 var item: Dictionary
@@ -23,7 +25,9 @@ func _ready():
 	items.shuffle()
 	show_questions()
 	displayScore()
-
+func _process(delta: float) -> void:
+	if Input.is_action_pressed("esc"):
+		get_tree().change_scene_to_file("res://UIScenes/menu.tscn")
 
 func displayScore():
 	WrongNumber.text = "Wrong: " + str(wrong)
@@ -32,6 +36,7 @@ func displayScore():
 func show_questions():
 	CorrectAnswer.hide()
 	OKButton.hide()
+	StartButton.hide()
 	Congratulation.hide()
 	AnswersList.show()
 	QuestionImage.show()
@@ -66,8 +71,10 @@ func show_result():
 	
 	var percentage = round(correct/items.size()*100)
 	var greet
-	if percentage >= 60:
+	if percentage >= 80:
 		greet = "Very good!"
+		Global.passedPermitTest = true
+		StartButton.show()
 	else:
 		greet = "Too bad!"
 	QuestionItems.text = "{greet} You're correct {percentage} %".format({"greet": greet, "percentage": percentage})
@@ -126,3 +133,8 @@ func _on_answers_list_item_selected(index):
 		
 func _on_restart_button_pressed():
 	get_tree().reload_current_scene()
+
+
+
+func _on_start_driving_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/demo_simcade.tscn")
