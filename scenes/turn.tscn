@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpyi7bf5sd7ey"]
+
+[ext_resource type="PackedScene" uid="uid://bbtybs6rfj42k" path="res://3dModels/Enviroment/TURN.glb" id="1_rus1v"]
+
+[node name="TURN" instance=ExtResource("1_rus1v")]
+
+[node name="Turn" parent="." index="0"]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0)
