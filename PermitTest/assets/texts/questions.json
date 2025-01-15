@@ -1,0 +1,80 @@
+[
+	{
+		"imagePath": "res://PermitTest/assets/images/01.png",
+		"question": "Unless otherwise posted the speed limit in a residential area is ____.",
+		"options": ["25 mph", "20 mph","35 mph"],
+		"correctOptionIndex": 0
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/02.jpg",
+		"question": "Who can legally park next to a curb painted blue?",
+		"options": ["Someone who is either picking up or dropping off passengers at this location.", "A person who is disabled and has a special placard or vehicle license plate for disabled persons.", "Person who will only be parked at the curb for less than 15 minutes."],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/03.png",
+		"question": "What is indicated by two sets of double yellow lines spaced 2 feet or more apart?",
+		"options": ["Lanes of traffic moving in the same direction.","Barrier.","Carpool/High-Occupancy (HOV) lane."],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/04.jpg",
+		"question": "What should you do to make a right turn at an upcoming intersection?",
+		"options": ["Merge into the bicycle lane before making the turn.", "Wait until the bicycle lane ends, then make the turn.", "Make the turn from your current lane and do not enter the bicycle lane."],
+		"correctOptionIndex": 0
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/05.jpg",
+		"question": "In which lane should you end your turn when making a right turn?",
+		"options": ["Any lane free of traffic.", "The lane closest to the left edge of the road.", "The lane closest to the right edge of the road."],
+		"correctOptionIndex": 2
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/06.jpg",
+		"question": "What color curb does not allow vehicles to stop or park?",
+		"options": ["Yellow.", "Red.", "White."],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/07.jpg",
+		"question": "When parking on a public road, you must park parallel to and within ____ inches of the curb or edge of the roadway.",
+		"options": ["20", "18", "22"],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/08.jpg",
+		"question": "In California, the speed limit for a blind intersection is ____.",
+		"options": ["25 mph", "20 mph", "15mph"],
+		"correctOptionIndex": 2
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/09.jpg",
+		"question": "What is the first thing you should do during an enforcement stop?",
+		"options": ["Stop on the center median","Stop on the left shoulder", "Turn on your right signal"],
+		"correctOptionIndex": 2
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/10.jpg",
+		"question": "If a traffic signal is green, but traffic is blocking the intersection, what should you do?",
+		"options": ["Partially enter the intersection, as allowed by traffic.", "Wait and do not enter the intersection until your vehicle can get completely across.", "Drive around the traffic on the shoulder to help ease the congestion."],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/11.jpg",
+		"question": "When waiting to make a left turn at an intersection, you should:",
+		"options": ["Shift gears", "Keep your wheel straights", "Keep your wheel turned to the left"],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/12.jpg",
+		"question": "You are under 18 years of age and have had your license for eight months. You may drive:",
+		"options": ["At any time.", "Between 5 a.m. and 11 p.m.", "Between 7 a.m. and 8 p.m."],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://PermitTest/assets/images/13.jpg",
+		"question": "When you park your vehicle facing uphill on a street, you should:",
+		"options": ["Turn the front wheels away from the curb.", "Put the transmission in neutral.", "Turn the front wheels toward the curb."],
+		"correctOptionIndex": 0
+	}
+]
