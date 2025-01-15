@@ -82,6 +82,36 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -0.034, -71)
 [node name="StopSign3" parent="." instance=ExtResource("2_u2q5r")]
 transform = Transform3D(4.20133e-10, 0, -0.0352316, 0, 0.0352316, 0, 0.0352316, 0, 4.20133e-10, 6.5, 0.1, 9)
 
+[node name="StopSign6" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(4.20133e-10, 0, -0.0352316, 0, 0.0352316, 0, 0.0352316, 0, 4.20133e-10, 54, 0, 10)
+
+[node name="StopSign11" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(4.20133e-10, 0, -0.0352316, 0, 0.0352316, 0, 0.0352316, 0, 4.20133e-10, 54, 0, -22)
+
+[node name="StopSign7" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(0.0352316, 0, 0, 0, 0.0352316, 0, 0, 0, 0.0352316, 42, 0, 58)
+
+[node name="StopSign14" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(-1.54002e-09, 0, 0.0352316, 0, 0.0352316, 0, -0.0352316, 0, -1.54002e-09, 90, 0, 22)
+
+[node name="StopSign15" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(-1.54002e-09, 0, 0.0352316, 0, 0.0352316, 0, -0.0352316, 0, -1.54002e-09, 90, 0, -10)
+
+[node name="StopSign12" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(0.0352316, 0, 0, 0, 0.0352316, 0, 0, 0, 0.0352316, 42, 0, -22)
+
+[node name="StopSign8" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(-1.54002e-09, 0, 0.0352316, 0, 0.0352316, 0, -0.0352316, 0, -1.54002e-09, 42, 0, 22)
+
+[node name="StopSign13" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(-1.54002e-09, 0, 0.0352316, 0, 0.0352316, 0, -0.0352316, 0, -1.54002e-09, 42, 0, -10)
+
+[node name="StopSign9" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(-0.0352316, 0, -3.08004e-09, 0, 0.0352316, 0, 3.08004e-09, 0, -0.0352316, 54, 0, 22)
+
+[node name="StopSign10" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(-0.0352316, 0, -3.08004e-09, 0, 0.0352316, 0, 3.08004e-09, 0, -0.0352316, 54, 0, -10)
+
 [node name="StopSign4" parent="." instance=ExtResource("2_u2q5r")]
 transform = Transform3D(4.20133e-10, 0, -0.0352316, 0, 0.0352316, 0, 0.0352316, 0, 4.20133e-10, 6.5, 0.1, -22)
 
@@ -99,9 +129,6 @@ transform = Transform3D(0.805078, 0, 0, 0, 0.805078, 0, 0, 0, 0.805078, -6.5, 0,
 
 [node name="TrafficLight" parent="." instance=ExtResource("4_qh5t1")]
 transform = Transform3D(-0.00366071, 0, -0.249973, 0, 0.25, 0, 0.249973, 0, -0.00366071, 4.82181, -0.0766053, -27.7165)
-
-[node name="IntersectionFullCross7" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 64)
 
 [node name="IntersectionFullCross8" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0.001, 16)
@@ -127,11 +154,20 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 80, 0.
 [node name="StraightRoadFullLine" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 32)
 
+[node name="StraightRoadFullLine5" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0.001, 32)
+
+[node name="StraightRoadFullLine26" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0.001, 48)
+
 [node name="StraightRoadFullLine18" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0)
 
 [node name="StraightRoadFullLine25" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0.001, 0)
+
+[node name="StraightRoadFullLine32" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0.001, -32)
 
 [node name="StraightRoadFullLine20" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, -32)
@@ -151,8 +187,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 32)
 [node name="StraightRoadFullLine13" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 48)
 
-[node name="StraightRoadFullLine23" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, -48)
+[node name="StraightRoadFullLine30" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 80, 0.001, -48)
+
+[node name="StraightRoadFullLine31" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 64, 0.001, -48)
 
 [node name="StraightRoadFullLine24" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, -32)
@@ -199,6 +238,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 48)
 [node name="StraightRoadFullLine19" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0.001, 64)
 
+[node name="StraightRoadFullLine27" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32, 0.001, 64)
+
+[node name="StraightRoadFullLine28" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 64, 0.001, 64)
+
+[node name="StraightRoadFullLine29" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 80, 0.001, 64)
+
 [node name="StraightRoadFullLine10" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0.001, 16)
 
@@ -225,6 +273,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, -16)
 
 [node name="TIntersection5" parent="." groups=["Road"] instance=ExtResource("10_4k3ko")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 16)
+
+[node name="TIntersection7" parent="." groups=["Road"] instance=ExtResource("10_4k3ko")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 48, 0.001, 64)
 
 [node name="TIntersection6" parent="." groups=["Road"] instance=ExtResource("10_4k3ko")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.001, -16)
