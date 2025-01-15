@@ -1,10 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://dxnvsoi1pvfeu"]
+[gd_scene load_steps=19 format=3 uid="uid://dxnvsoi1pvfeu"]
 
 [ext_resource type="PackedScene" uid="uid://bv540id1ls1ud" path="res://scenes/traffic_cone_new.tscn" id="1_cjsth"]
 [ext_resource type="PackedScene" uid="uid://bfj88dim36t3" path="res://3dModels/Enviroment/StopSign.glb" id="2_u2q5r"]
 [ext_resource type="PackedScene" uid="uid://dk7mler0famwa" path="res://3dModels/Enviroment/trashbag.glb" id="3_8aqtm"]
 [ext_resource type="PackedScene" uid="uid://w501mg8ikfl0" path="res://3dModels/Enviroment/TrafficLight.glb" id="4_qh5t1"]
-[ext_resource type="PackedScene" uid="uid://df3430yo1v1pt" path="res://scenes/intersection_half_cross.tscn" id="6_7no42"]
 [ext_resource type="PackedScene" uid="uid://b5oqfat3lyr53" path="res://scenes/straight_road_half_line.tscn" id="7_gos3m"]
 [ext_resource type="PackedScene" uid="uid://blyabeyt1wamk" path="res://scenes/straight_road_full_line.tscn" id="8_20dui"]
 [ext_resource type="PackedScene" uid="uid://dvvmv5ux5jmr8" path="res://scenes/intersection_full_cross.tscn" id="9_7bpqq"]
@@ -71,11 +70,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0338788, -23.5038)
 [node name="TrafficConeNew2" parent="." instance=ExtResource("1_cjsth")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.30565, -0.0338788, -21.5216)
 
-[node name="StopSign" parent="." instance=ExtResource("2_u2q5r")]
-transform = Transform3D(-0.0352299, 0, 0.000344344, 0, 0.0352316, 0, -0.000344344, 0, -0.0352299, 6, 0, -9.75)
+[node name="TrafficConeNew3" parent="." instance=ExtResource("1_cjsth")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.306, -0.034, -71)
 
-[node name="StopSign2" parent="." instance=ExtResource("2_u2q5r")]
-transform = Transform3D(0.0352316, 0, 0, 0, 0.0352316, 0, 0, 0, 0.0352316, -6, 0.1, -22)
+[node name="TrafficConeNew4" parent="." instance=ExtResource("1_cjsth")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.034, -71)
+
+[node name="TrafficConeNew5" parent="." instance=ExtResource("1_cjsth")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -0.034, -71)
+
+[node name="StopSign3" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(4.20133e-10, 0, -0.0352316, 0, 0.0352316, 0, 0.0352316, 0, 4.20133e-10, 6.5, 0.1, 9)
+
+[node name="StopSign4" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(4.20133e-10, 0, -0.0352316, 0, 0.0352316, 0, 0.0352316, 0, 4.20133e-10, 6.5, 0.1, -22)
+
+[node name="StopSign5" parent="." instance=ExtResource("2_u2q5r")]
+transform = Transform3D(-0.0352316, 0, -3.08004e-09, 0, 0.0352316, 0, 3.08004e-09, 0, -0.0352316, 6.5, 0, -71)
 
 [node name="trashbag" parent="." instance=ExtResource("3_8aqtm")]
 transform = Transform3D(0.805078, 0, 0, 0, 0.805078, 0, 0, 0, 0.805078, -12.3134, 0.895483, -27.2413)
@@ -89,26 +100,23 @@ transform = Transform3D(0.805078, 0, 0, 0, 0.805078, 0, 0, 0, 0.805078, -6.5, 0,
 [node name="TrafficLight" parent="." instance=ExtResource("4_qh5t1")]
 transform = Transform3D(-0.00366071, 0, -0.249973, 0, 0.25, 0, 0.249973, 0, -0.00366071, 4.82181, -0.0766053, -27.7165)
 
-[node name="IntersectionFullCross" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 16)
-
 [node name="IntersectionFullCross7" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 64)
 
-[node name="IntersectionFullCross3" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 16)
+[node name="IntersectionFullCross8" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0.001, 16)
 
-[node name="IntersectionFullCross2" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, -16)
+[node name="IntersectionFullCross9" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0.001, 16)
+
+[node name="IntersectionFullCross10" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0.001, -16)
 
 [node name="StraightRoadHalfLine2" parent="." groups=["Road"] instance=ExtResource("7_gos3m")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0.001, -16)
 
 [node name="StraightRoadHalfLine3" parent="." groups=["Road"] instance=ExtResource("7_gos3m")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32, 0.001, -16)
-
-[node name="StraightRoadHalfLine4" parent="." groups=["Road"] instance=ExtResource("7_gos3m")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 48, 0.001, -16)
 
 [node name="StraightRoadHalfLine5" parent="." groups=["Road"] instance=ExtResource("7_gos3m")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 64, 0.001, -16)
@@ -121,6 +129,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 32)
 
 [node name="StraightRoadFullLine18" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0)
+
+[node name="StraightRoadFullLine25" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0.001, 0)
 
 [node name="StraightRoadFullLine20" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, -32)
@@ -136,6 +147,15 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0.
 
 [node name="StraightRoadFullLine8" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 32)
+
+[node name="StraightRoadFullLine13" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 48)
+
+[node name="StraightRoadFullLine23" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, -48)
+
+[node name="StraightRoadFullLine24" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, -32)
 
 [node name="StraightRoadFullLine4" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32, 0.001, 16)
@@ -158,26 +178,11 @@ transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -7.8, 0.
 [node name="Building2" parent="." instance=ExtResource("9_elp5e")]
 transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -7.8, 0.001, -8)
 
-[node name="IntersectionHalfCross" parent="." groups=["Road"] instance=ExtResource("6_7no42")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, -16)
-
-[node name="IntersectionFullCross4" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 16)
-
-[node name="IntersectionFullCross5" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 16)
-
-[node name="IntersectionFullCross6" parent="." groups=["Road"] instance=ExtResource("9_7bpqq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, -16)
-
 [node name="StraightRoadHalfLine8" parent="." groups=["Road"] instance=ExtResource("7_gos3m")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0.001, -16)
 
 [node name="StraightRoadHalfLine9" parent="." groups=["Road"] instance=ExtResource("7_gos3m")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32, 0.001, -16)
-
-[node name="StraightRoadHalfLine10" parent="." groups=["Road"] instance=ExtResource("7_gos3m")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 48, 0.001, -16)
 
 [node name="StraightRoadHalfLine11" parent="." groups=["Road"] instance=ExtResource("7_gos3m")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 64, 0.001, -16)
@@ -212,8 +217,14 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 80, 0.
 [node name="StraightRoadFullLine16" parent="." groups=["Road"] instance=ExtResource("8_20dui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 0)
 
-[node name="IntersectionHalfCross2" parent="." groups=["Road"] instance=ExtResource("6_7no42")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, -16)
+[node name="TIntersection2" parent="." groups=["Road"] instance=ExtResource("10_4k3ko")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.001, 16)
 
-[node name="TIntersection" parent="." groups=["Road"] instance=ExtResource("10_4k3ko")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 48, 0.001, 16)
+[node name="TIntersection4" parent="." groups=["Road"] instance=ExtResource("10_4k3ko")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, -16)
+
+[node name="TIntersection5" parent="." groups=["Road"] instance=ExtResource("10_4k3ko")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0.001, 16)
+
+[node name="TIntersection6" parent="." groups=["Road"] instance=ExtResource("10_4k3ko")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.001, -16)
